@@ -1,5 +1,5 @@
 # Encryptor
-A WPF application that encodes and decodes messages using common cipher algorithms
+Encode and decodesmessages using common cipher algorithms
 
 ## Current Ciphers
 * Atbash
