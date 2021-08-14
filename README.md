@@ -3,7 +3,7 @@
 Encode text using common cipher algorithms
 
 ## Preview
-![Encryptor](https://imgur.com/a/bdbIoFZ)
+![Encryptor](https://i.imgur.com/up9oEav.png)
 
 ## Features
 
