@@ -1,30 +1,26 @@
 # Cipher - Desktop Application
 
-Encode and decode text using common cipher algorithms
+Encode text using common cipher algorithms
 
 ## Preview
-![Encryptor](https://i.imgur.com/tODzBap.png)
+![Encryptor](https://imgur.com/a/bdbIoFZ)
 
 ## Features
 
 * Encode text using various cryptography ciphers
+
+### TODO
+
 * Smart decode text. This will try to auto decode text that has been encoded
 
 ## Current Ciphers
 
-* Atbash
-* Baconian
-* ROT13
-* Polybius
-* Base64
-* Latin
-* NULL
-* XOR
-* Caesar
+* Atbash, Baconian, ROT13 
+* Polybius, Base64, Latin
 
 ## Dependencies
  
  * IIS 7.5+
- * Microsoft .NET Framework 4.6/4.7
+ * Microsoft .NET Framework 4.7
  * [visual studio 2019](https://visualstudio.microsoft.com/downloads/) 
  * .NET desktop development (install from visual studio installer)
