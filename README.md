@@ -1,4 +1,4 @@
-# Text Encryption Desktop App
+# Cipher - Desktop Application
 
 Encode and decode text using common cipher algorithms
 
@@ -7,8 +7,7 @@ Encode and decode text using common cipher algorithms
 
 ## Features
 
-* Encode normal text
-* Decode a cipher text
+* Encode text using various cryptography ciphers
 * Smart decode text. This will try to auto decode text that has been encoded
 
 ## Current Ciphers
@@ -29,8 +28,3 @@ Encode and decode text using common cipher algorithms
  * Microsoft .NET Framework 4.6/4.7
  * [visual studio 2019](https://visualstudio.microsoft.com/downloads/) 
  * .NET desktop development (install from visual studio installer)
-
-
-## Project Deployment
-
-    $ In visual studio, click the `Start` button to launch the web application
