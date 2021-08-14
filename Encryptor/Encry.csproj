@@ -66,12 +66,9 @@
     <Compile Include="Ciphers\Atbash.cs" />
     <Compile Include="Ciphers\Baconian.cs" />
     <Compile Include="Ciphers\Base64.cs" />
-    <Compile Include="Ciphers\Caesar.cs" />
     <Compile Include="Ciphers\Latin.cs" />
-    <Compile Include="Ciphers\Null.cs" />
     <Compile Include="Ciphers\Polybius.cs" />
     <Compile Include="Ciphers\Rot13.cs" />
-    <Compile Include="Ciphers\Xor.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

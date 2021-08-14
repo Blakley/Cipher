@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
+using System.Windows.Documents;
 
 namespace Encryptor
 {
@@ -12,67 +12,63 @@ namespace Encryptor
 
         private void AtbashClick(object sender, RoutedEventArgs e)
         {
-
             Atbash cipher = new Atbash();
-            string result = cipher.EncryptAtbash(password_input.Text);
-            debugger.AppendText("Atbash: " + result + '\n');
-        }
+            string result = cipher.EncryptAtbash(input_box.Text);
 
+            output_box.Text = "";
+            output_box.AppendText("Atbash: \n");
+            output_box.AppendText(result);
+        }
 
         private void BaconianClick(object sender, RoutedEventArgs e)
         {
             Baconian cipher = new Baconian();
-            string result = cipher.EncryptBaconian(password_input.Text);
-            debugger.AppendText("Baconian: " + result + '\n');
+            string result = cipher.EncryptBaconian(input_box.Text);
+
+            output_box.Text = "";
+            output_box.AppendText("Baconian: \n");
+            output_box.AppendText(result);
         }
 
         private void Rot13Click(object sender, RoutedEventArgs e)
         {
             Rot13 cipher = new Rot13();
-            string result = cipher.EncryptRot13(password_input.Text);
-            debugger.AppendText("Rot13: " + result + '\n');
-        }
+            string result = cipher.EncryptRot13(input_box.Text);
 
-        private void CaesarClick(object sender, RoutedEventArgs e)
-        {
-            Caesar cipher = new Caesar();
-            string result = cipher.EncryptCaesar(password_input.Text, Int32.Parse(caesarShift.Text));
-            debugger.AppendText("Caesar: " + result + '\n');
+            output_box.Text = "";
+            output_box.AppendText("Rot13: \n");
+            output_box.AppendText(result);
         }
 
         private void Base64Click(object sender, RoutedEventArgs e)
         {
             Base64 cipher = new Base64();
-            string result = cipher.EncryptBase64(password_input.Text);
-            debugger.AppendText("Base64: " + result + '\n');
+            string result = cipher.EncryptBase64(input_box.Text);
+
+            output_box.Text = "";
+            output_box.AppendText("Base64: \n");
+            output_box.AppendText(result);
         }
 
-        private void test_latin_Click(object sender, RoutedEventArgs e)
+        private void LatinClick(object sender, RoutedEventArgs e)
         {
             Latin cipher = new Latin();
-            string result = cipher.EncryptLain(password_input.Text);
-            debugger.AppendText("Latin: " + result + '\n');
+            string result = cipher.EncryptLain(input_box.Text);
+
+            output_box.Text = "";
+            output_box.AppendText("Latin: \n");
+            output_box.AppendText(result);
         }
 
-        private void test_null_Click(object sender, RoutedEventArgs e)
-        {
-            Null cipher = new Null();
-            string result = cipher.EncryptNull(password_input.Text);
-            debugger.AppendText("Null: " + result + '\n');
-        }
-
-        private void test_xor_Click(object sender, RoutedEventArgs e)
-        {
-            Xor cipher = new Xor();
-            string result = cipher.EncryptXor(password_input.Text, xorKey.Text); // single character key Letter
-            debugger.AppendText("Xor: " + result + '\n');
-        }
-
-        private void test_polybius_Click(object sender, RoutedEventArgs e)
+        private void PolybiusClick(object sender, RoutedEventArgs e)
         {
             Polybius cipher = new Polybius();
-            string result = cipher.EncryptPolybuis(password_input.Text);
-            debugger.AppendText("Polybius: " + result + '\n');
+            string result = cipher.EncryptPolybuis(input_box.Text);
+
+            output_box.Text = "";
+            output_box.AppendText("Polybius: \n");
+            output_box.AppendText(result);
         }
+
     }
 }
